@@ -38,12 +38,12 @@ $(document).ready(function () {
             $(".filter").not('.' + value).hide('3000');
             $('.filter').filter('.' + value).show('3000');
         }
+
+        $(".filter-button").removeClass("active");
+        $(this).addClass("active");
     });
 
-    if ($(".filter-button").removeClass("active")) {
-        $(this).removeClass("active");
-    }
-    $(this).addClass("active");
+    
 
     // ===============================================================================
     //      PORTFOILO POPUP
@@ -107,7 +107,7 @@ $(document).ready(function () {
                 $("#success_msg").text(response.message);
 
                 setTimeout(function(){
-                    $("#success_msg").text("");
+                    $("#success_msg").text();
                 }, 5000);
             }, "json");            
         }

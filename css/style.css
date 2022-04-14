@@ -21,8 +21,8 @@ body {
     font-size: 14px;
     font-family: 'Lato', sans-serif !important;
     background: #f4f4f4;
-    /*overflow-y: visible;*/
 }
+
 .text-center {
     text-align: center;
 }
@@ -85,7 +85,7 @@ button {
     cursor: pointer;
 }
 a:hover {
-    color: #0279FF;
+    color: #ffa60a;
     opacity: 0.9;
 }
 p {
@@ -136,9 +136,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 .profile-image {
     width: 100%;
-    -webkit-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    -moz-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: -2px -1px 8px 0px rgb(0 0 0 / 17%);
+    -moz-box-shadow:-2px -1px 8px 0px rgb(0 0 0 / 17%);
+    box-shadow: -2px -1px 8px 0px rgb(0 0 0 / 17%);
 }
 .profile-image img {
     width: 100%;
@@ -146,9 +146,15 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 .profile-info {
     text-align: center;
     background: #FFFFFF;
-    -webkit-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    -moz-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow:-2px -1px 8px 0px rgb(0 0 0 / 17%);
+    -moz-box-shadow:-2px -1px 8px 0px rgb(0 0 0 / 17%);
+    box-shadow: -2px -1px 8px 0px rgb(0 0 0 / 17%);
+}
+.profile-info h6 {
+    font-weight: 600;
+    color: #ffa60a;
+    margin-top: 4px;
+    font-size: 14px;
 }
 .name-job {
     padding: 23px 0;
@@ -173,9 +179,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     width: 100%;
     background: #fff;
     display: inline-block;
-    -webkit-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    -moz-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow:-2px -1px 8px 0px rgb(0 0 0 / 17%);
+    -moz-box-shadow:-2px -1px 8px 0px rgb(0 0 0 / 17%);
+    box-shadow: -2px -1px 8px 0px rgb(0 0 0 / 17%);
 }
 .top-menu a {
     color: #000;
@@ -210,9 +216,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 .content {
     background: #fff;
     margin-top: 30px;
-    -webkit-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    -moz-box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
-    box-shadow: -2px -1px 88px 0px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: -2px -1px 8px 0px rgb(0 0 0 / 17%);
+    -moz-box-shadow:-2px -1px 8px 0px rgb(0 0 0 / 17%);
+    box-shadow: -2px -1px 8px 0px rgb(0 0 0 / 17%);
     position: relative;
     display: inline-block;
 }
@@ -227,7 +233,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     color: #243c4f;
 }
 .pinfo {
-    padding: 30px 15px;
+    padding: 25px 30px;
     float: left;
     width: 100%;
 }
@@ -255,9 +261,9 @@ ul.info-list li span {
 .top-menu .active a {
     color: #ffa60a;
 }
-.top-menu a:last-child {
+/*.top-menu a:last-child {
     border-bottom: none;
-}
+}*/
 ul.info-list li span.about-ti {
     width: 90px;
     color: #000;
@@ -278,11 +284,15 @@ ul.info-list li {
     font-size: 12px;
 }
 p#success_msg {
-    color: green;
+    color: #5bbb59;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 17px;
     text-align: center;
     width: 100%;
+}
+div#contact .page {
+    padding-top: 0;
 }
 .gray-bg {
     background: #f7f7f7;
@@ -416,24 +426,24 @@ ul.skill-list h3 {
     -moz-border-radius: 50px;
     border-radius: 50px;
 }
-.resume-education {
+.profile-education {
     margin-bottom: 30px;
     padding: 0 15px;
 }
 .rounded-icon i {
     background: #243c4f;
 }
-.resume-out {
+.profile-out {
     padding-left: 25px;
 }
-.resume-info {
+.profile--info {
     border-left: 2px solid #E5E5E5;
     padding: 0 0 40px 30px;
 }
-.resume-info:first-child {
+.profile--info:first-child {
     padding-top: 50px;
 }
-.resume-info:last-child {
+.profile--info:last-child {
     padding-bottom: 0;
 }
 .info-title {
@@ -461,7 +471,7 @@ ul.skill-list h3 {
 .info-date {
     color: #243c4f;
 }
-.resume-info p {
+.profile--info p {
     color: #7F7F7F;
     font-weight: 400;
     font-size: 15px;
@@ -493,6 +503,10 @@ ul.skill-list h3 {
 }
 .but-big {
     background-color: #243c4f;
+    transition: all 0.5s ease 0s;
+}
+.but-big:hover{
+    background-color:#ffa60a;
 }
 div#contact ul.info-list li {
     width: 100%
@@ -501,12 +515,18 @@ div#contact ul.info-list li {
     float: left;
     list-style: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     margin-right: 20px;
-    color: #c1c1c1;
+    color: #666464;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
 }
 .work_btn .filter-button {
     background: transparent;
+}
+.work_btn .filter-button.active{
+    color:#ffa60a;
+    border-bottom: 2px solid #ffa60a;
 }
 .social-icons a {
     font-size: 12px;
@@ -702,7 +722,7 @@ a.about-profile-icon {
     border: solid 1px #0a66c2;
 }
 a.about-profile-icon.fiverr-icon svg {
-    height: 12px;
+    height: 16px;
     width: 12px;
 }
 a.about-profile-icon.fiverr-icon {
@@ -769,12 +789,12 @@ a.about-profile-icon.upwork-icon:hover svg{
 /* ========================
 Resume Heading
 ====================*/
-.resume-heading {
+.profile-heading {
     display: flex;
     align-items: center;
 }
 
-.resume-title {
+.profile-title {
     margin-left: 15px;
     font-weight: 600;
     font-size: 16px;
@@ -821,12 +841,34 @@ Resume Heading
         margin-bottom: 15px;
     }
     .profile-info h1 {
-        font-size: 15px;
+        font-size: 12px;
     }
     .job {
         line-height: 25px;
         font-size: 14px;
     }
+    .gallery_product {
+        width: 50%;
+    }
+    .profile-info h6 {
+    font-size: 12px;
+}
+ul.info-list li span.about-ti {
+    width: 90px;
+    font-size: 14px;
+}
+form.contact-form,.contact-info{
+    width: 100%;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.name-job {
+    padding: 15px 0;
+}
+.profile-info .social-icons {
+    padding: 14px 15px;
+}
 }
 @media(max-width:767px) {
     .main-content-inner {
@@ -836,12 +878,13 @@ Resume Heading
         width: 100%;
     }
     .pdlr-15 {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
     .top-menu a {
         padding: 15px;
         font-size: 12px;
+        text-align: left;
     }
     .top-menu i {
         font-size: 12px;
@@ -849,9 +892,16 @@ Resume Heading
     .content {
         margin-top: 20px;
     }
-    .page-title {
-        padding: 20px 15px;
+    .profile-info h6 {
+    font-size: 13px;
     }
+    .page-title {
+        padding: 15px 15px;
+    }
+    .work_btn .filter-button {
+    font-size: 13px;
+    margin-right: 14px;
+}
     .page-title h2 {
         font-size: 16px;
     }
@@ -878,6 +928,10 @@ Resume Heading
         line-height: 25px;
         font-size: 14px;
     }
+    .gallery_product {
+        width: 50%;
+        padding: 0 5px;
+    }
 }
 @media screen and (min-width: 768px) {
     .top-menu a {
@@ -885,12 +939,53 @@ Resume Heading
     }
 }
 @media(max-width: 767px) {
+    .portfoilo-header .page.pdlr-15 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
     .responsive-menu {
         display: block;
+        padding: 20px 15px;
     }
+    .services .service p {
+    font-size: 14px;
+}
+.rounded-icon i {
+    width: 40px;
+    padding: 14px 0;
+    font-size: 13px;
+}
+.profile-education {
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+.profile-title {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.profile-out {
+    padding-left: 18px;
+}
+.profile--info:first-child {
+    padding-top: 25px;
+}
+.profile--info {
+    padding: 0 0 30px 20px;
+}
+.info-title::after {
+    margin: 5px 9px 0 -26px;
+}
+.profile--info p {
+    font-size: 14px;
+    line-height: 20px;
+}
+form.col-md-6.contact-form.pdlr-15,
+.col-md-6.contact-info.pdlr-15 {
+    width: 50%;
+}
     .top-menu {
         top: 0;
-        margin-top: 78px;
+        margin-top: 60px;
         z-index: 1;
         left: 0;
         position: fixed;
@@ -908,8 +1003,8 @@ Resume Heading
         display: block;
     }
     .top-menu a {
-        padding: 30px 20px;
-        font-size: 13px;
+        padding: 20px 20px;
+        font-size: 12px;
     }
     .services .service {
         width: 100%;
@@ -918,6 +1013,44 @@ Resume Heading
     .my-skills, .about-text {
         padding: 0;
     }
+    .profile-image{
+        box-shadow: none;
+        text-align: center;
+    }
+    .profile-image img {
+        width: 50%;
+    }
+    .overlay_text {
+        right: 5px;
+        left: 5px;
+    }
+    .name-job {
+    padding: 15px 0;
+}
+.profile-info .social-icons {
+    padding: 13px 15px 15px 15px;
+}
+}
+@media(max-width:575px){
+    form.col-md-6.contact-form.pdlr-15,
+.col-md-6.contact-info.pdlr-15 {
+    width: 100%;
+    padding: 0;
+}
+p#success_msg {
+    font-size: 14px;
+    margin-bottom: 13px;
+    margin-top:13px;
+}
+.form-inp {
+    height: 40px;
+}
+.contact-form textarea {
+    max-height: 100px;
+}
+.filed-main {
+    margin-bottom: 10PX;
+}
 }
 @media(max-width:480px) {
     ul.info-list li {
@@ -966,7 +1099,7 @@ Resume Heading
         flex-wrap: wrap;
     }
     .top-menu a {
-        padding: 20px 20px;
+        padding: 15px 15px;
     }
     ul.info-list.contact {
         margin-bottom: 10px;
