@@ -693,27 +693,32 @@
                         <div class="col-md-12 page pdlr-15 d-flex flex-wrap">
                            <!-- Contact Form -->
                            <p id="success_msg"></p>
-                           <form class="col-md-6 contact-form pdlr-15" method="POST">
+                           
+                           <form class="col-md-6 contact-form pdlr-15" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfT-jYX-qDp66ZdCth1BVyWKatz3qoDUpgByaYDXFqYvCKu0g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                               <h2 class="section-title">Contact Form</h2>
                               <!--Name-->
                               <div class="filed-main">
-                                 <input type="text" id="con_name" name="name" class="form-inp" placeholder="Full Name" />
+                                 <input type="text" name="entry.1915738868" id="entry.1915738868" class="form-inp" placeholder="Full Name" />
                                  <label class="error-form" id="con_name_error" style="display: none;">Please enter your full name.</label>
                               </div>
                               <!--Email-->
                               <div class="filed-main">
-                                 <input type="email" id="con_email" name="email" class="form-inp" placeholder="Email" />
+                                 <input type="email" name="entry.64911987" id="entry.64911987" class="form-inp" placeholder="Email" />
                                  <label class="error-form" id="con_blank_email_error" style="display: none;">Let me know where can I contact?</label>
                                  <label class="error-form" id="con_email_error" style="display: none;">Give me a valid email address please.</label>
                               </div>
                               <!--Message-->
                               <div class="filed-main">
-                                 <textarea id="con_message" name="message" placeholder="Message" rows="8" ></textarea>
+                                 <textarea name="entry.1673194329" id="entry.1673194329" placeholder="Message" rows="8" ></textarea>
                                  <label class="error-form" id="con_message_error" style="display: none;">Please write your message in brief.</label>
                               </div>
                               <!--Submit-->
                               <button id="con_submit" type="button" class="but-big" value="SEND A MESSAGE">SEND A MESSAGE</button>
                            </form>
+
+                           <!--Google Form iframe -->
+                           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
                            <!-- Contact Information -->
                            <div class="col-md-6 contact-info pdlr-15">
                               <h2 class="section-title">Contact Info</h2>
