@@ -93,9 +93,8 @@ $(document).ready(function () {
 
         //Message validation
         if($.trim($('#con_message').val()) == ""){
-
             validation = false;
-            $("#con_messe_error").show();
+            $("#con_message_error").show();
         }else{
             $("#con_message_error").hide();
         }
