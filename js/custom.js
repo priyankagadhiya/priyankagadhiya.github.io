@@ -82,7 +82,7 @@ $(document).ready(function () {
         }else{
             $("#con_blank_email_error").hide();
 
-            if(!emailRegex.test($.trim($('#email').val()))){
+            if(!emailRegex.test($.trim($('#con_email').val()))){
 
                 validation = false;
                 $("#con_email_error").show();
